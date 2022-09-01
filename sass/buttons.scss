@@ -1,0 +1,27 @@
+.btn {
+    border-radius:50px;
+    width: 220px;
+    height: 45px;
+    font-size: 15px;
+    font-weight: bold;
+    background: linear-gradient($colour-rose, $colour-violet);
+    color: $colour-white;
+    margin: 30px 40px;
+    border-style: none;
+    box-shadow: 0 12px 10px $colour-shadow;
+    cursor: pointer;
+    transform: scale(1);
+    transition-property: transform;
+    transition-duration: 400ms;
+
+    &:hover {
+       transform: scale(1);
+       background:linear-gradient( lighten($colour-rose,5),lighten($colour-violet, 5) ); 
+    }
+
+}
+
+
+
+
+    
