@@ -4,11 +4,11 @@
     height: 45px;
     font-size: 15px;
     font-weight: bold;
-    background: linear-gradient($colour-rose, $colour-violet);
-    color: $colour-white;
+    background: linear-gradient($color-secondary, $color-primary);
+    color: $color-light;
     margin: 30px 40px;
     border-style: none;
-    box-shadow: 0 12px 10px $colour-shadow;
+    box-shadow: 0 12px 10px $color-shadow;
     cursor: pointer;
     transform: scale(1);
     transition-property: transform;
@@ -16,7 +16,7 @@
 
     &:hover {
        transform: scale(1);
-       background:linear-gradient( lighten($colour-rose,5),lighten($colour-violet, 5) ); 
+       background:linear-gradient( lighten($color-secondary,5),lighten($color-primary, 5) ); 
     }
 
 }

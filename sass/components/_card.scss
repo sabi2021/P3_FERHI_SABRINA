@@ -1,0 +1,65 @@
+.card {
+    background-color: $color-light;
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-radius: 5%;
+    box-shadow: 0 5px 8px $color-shadow;
+
+
+    img {
+        width: 100%;
+        height: 200px;
+        object-fit: cover;
+        border-radius: 20px 20px 0px 0px;
+    }
+
+    .img {
+
+        position: relative;
+
+        .badge {
+            top: 15px;
+            right: 15px;
+            position: absolute;
+        }
+    }
+
+    .description {
+        display: flex;
+        padding: 20px;
+        justify-content: space-between;
+
+        .texte {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .favori {
+            font-size: 25px;
+            overflow: hidden;
+
+            .heartcolor {
+                display: none;
+            }
+
+            &:hover {
+
+                .hearttransparent {
+                    display: none;
+                }
+
+                .heartcolor {
+                    display: block;
+                }
+            }
+        }
+    }
+}
+
+.card_list {
+    margin: 40px 20px;
+    display: flex;
+    flex-direction: column;
+}

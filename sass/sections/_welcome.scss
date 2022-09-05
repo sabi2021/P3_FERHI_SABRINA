@@ -1,0 +1,15 @@
+.welcome {
+    text-align: center;
+    background-color: darken($color-bg-main, 1);
+    padding: 30px 20px;
+
+    .title {
+        margin: 15px 50px;
+        font-size: 150%;
+        font-weight: bold;
+    }
+
+    .subtitle {
+        color: $color-text-secondary;
+    }
+}
