@@ -13,8 +13,15 @@
         font-weight: bold;
         color: $color-text-secondary;
 
-        p {
-            margin-left: 5px;
+        .inputSearch {
+            background-color: darken($color-bg-main, 5);
+            border: none;
+            text-align: center;
+            width: 30%;
+
+            &:focus{
+                outline: none;
+            }
         }
 
         i {

@@ -8,62 +8,14 @@
 
 @import "./sections/location";
 @import "./sections/welcome";
+@import "./sections/steps";
 
 @import "./components/page_loading";
 @import "./components/badge";
 @import "./components/buttons";
 @import "./components/card";
 
-.operation {
-    margin: 40px 20px;
-}
 
-.list {
-    list-style-type: none;
-    margin-top: 20px;
-    margin-left: 10px;
-}
-
-.list li {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    font-size: 17px;
-    margin-bottom: 25px;
-    background-color: darken($color-bg-main, 1);
-    border-radius: 20px;
-    box-shadow: 0 5px 8px $color-shadow;
-    text-align: center;
-    padding-top: 25px;
-    padding-bottom: 20px;
-
-    &:hover {
-        background-color: lighten($color-secondary, 20);
-
-        i {
-            color: purple;
-        }
-    }
-}
-
-.list li div {
-    background-color: $color-primary;
-    border-radius: 50px;
-    width: 25px;
-    height: 25px;
-    color: white;
-    text-align: center;
-    font-weight: bold;
-    margin-left: -13px;
-    padding: 5px;
-    font-size: small;
-}
-
-.list li span {
-    font-weight: bold;
-    color: $color-text;
-    margin-right: 70px;
-}
 
 .heartcolor {
     background: linear-gradient($color-secondary, $color-primary);

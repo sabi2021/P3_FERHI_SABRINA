@@ -347,8 +347,18 @@ body {
   font-family: Roboto;
 }
 
+h1 {
+  font-size: 150%;
+  font-weight: bold;
+}
+
+h2 {
+  font-size: 100%;
+  font-weight: bold;
+}
+
 .container {
-  padding: 10px 0;
+  padding: 30px 15px;
 }
 
 .container_bg {
@@ -371,6 +381,7 @@ footer {
   padding: 20px;
   color: #f8f6f6;
   font-size: 20px;
+  text-align: left;
 }
 footer .footertext {
   margin-bottom: 15px;
@@ -379,6 +390,10 @@ footer .footertext {
   padding-left: 5px;
   font-size: 20px;
   color: white;
+}
+footer .linkFooter {
+  list-style-type: none;
+  margin-left: -35px;
 }
 footer .fa-utensils {
   margin-right: 6px;
@@ -393,9 +408,6 @@ footer li {
 }
 footer li i {
   margin-right: 5px;
-}
-footer .proposition {
-  margin-left: 4px;
 }
 
 .location {
@@ -413,8 +425,14 @@ footer .proposition {
   font-weight: bold;
   color: #666666;
 }
-.location div p {
-  margin-left: 5px;
+.location div .inputSearch {
+  background-color: #eeebeb;
+  border: none;
+  text-align: center;
+  width: 30%;
+}
+.location div .inputSearch:focus {
+  outline: none;
 }
 .location div i {
   margin-bottom: 3px;
@@ -428,11 +446,53 @@ footer .proposition {
 }
 .welcome .title {
   margin: 15px 50px;
-  font-size: 150%;
-  font-weight: bold;
 }
 .welcome .subtitle {
   color: #666666;
+}
+
+.stepList {
+  margin-top: 20px;
+  margin-left: 10px;
+}
+
+.stepList li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 17px;
+  margin-bottom: 25px;
+  background-color: #f8f6f6;
+  border-radius: 20px;
+  box-shadow: 0 5px 8px #e3dddd;
+  text-align: center;
+  padding-top: 25px;
+  padding-bottom: 20px;
+}
+.stepList li:hover {
+  background-color: #ffdff6;
+}
+.stepList li:hover i {
+  color: purple;
+}
+
+.stepList li div {
+  background-color: #9356DC;
+  border-radius: 50px;
+  width: 25px;
+  height: 25px;
+  color: white;
+  text-align: center;
+  font-weight: bold;
+  margin-left: -13px;
+  padding: 5px;
+  font-size: small;
+  vertical-align: middle;
+}
+
+.stepList li h2 {
+  color: #000;
+  margin-right: 70px;
 }
 
 #cover-spin {
@@ -519,12 +579,15 @@ footer .proposition {
 }
 .card .description {
   display: flex;
-  padding: 20px;
+  padding: 10px 10px 20px 10px;
   justify-content: space-between;
 }
-.card .description .texte {
+.card .description .text {
   display: flex;
   flex-direction: column;
+}
+.card .description .text h2 {
+  margin: 0px;
 }
 .card .description .favori {
   font-size: 25px;
@@ -544,55 +607,6 @@ footer .proposition {
   margin: 40px 20px;
   display: flex;
   flex-direction: column;
-}
-
-.operation {
-  margin: 40px 20px;
-}
-
-.list {
-  list-style-type: none;
-  margin-top: 20px;
-  margin-left: 10px;
-}
-
-.list li {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  font-size: 17px;
-  margin-bottom: 25px;
-  background-color: #f8f6f6;
-  border-radius: 20px;
-  box-shadow: 0 5px 8px #e3dddd;
-  text-align: center;
-  padding-top: 25px;
-  padding-bottom: 20px;
-}
-.list li:hover {
-  background-color: #ffdff6;
-}
-.list li:hover i {
-  color: purple;
-}
-
-.list li div {
-  background-color: #9356DC;
-  border-radius: 50px;
-  width: 25px;
-  height: 25px;
-  color: white;
-  text-align: center;
-  font-weight: bold;
-  margin-left: -13px;
-  padding: 5px;
-  font-size: small;
-}
-
-.list li span {
-  font-weight: bold;
-  color: #000;
-  margin-right: 70px;
 }
 
 .heartcolor {

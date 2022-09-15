@@ -1,0 +1,45 @@
+.stepList {
+    margin-top: 20px;
+    margin-left: 10px;
+}
+
+.stepList li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 17px;
+    margin-bottom: 25px;
+    background-color: darken($color-bg-main, 1);
+    border-radius: 20px;
+    box-shadow: 0 5px 8px $color-shadow;
+    text-align: center;
+    padding-top: 25px;
+    padding-bottom: 20px;
+
+    &:hover {
+        background-color: lighten($color-secondary, 20);
+
+        i {
+            color: purple;
+        }
+    }
+}
+
+.stepList li div {
+    background-color: $color-primary;
+    border-radius: 50px;
+    width: 25px;
+    height: 25px;
+    color: white;
+    text-align: center;
+    font-weight: bold;
+    margin-left: -13px;
+    padding: 5px;
+    font-size: small;
+    vertical-align: middle;
+}
+
+.stepList li h2 {
+    color: $color-text;
+    margin-right: 70px;
+}
