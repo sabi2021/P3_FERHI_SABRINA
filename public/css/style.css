@@ -594,6 +594,10 @@ footer li i {
   overflow: hidden;
 }
 .card .description .favori .heartcolor {
+  background: linear-gradient(#FF79DA, #9356DC);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
   display: none;
 }
 .card .description .favori:hover .hearttransparent {
@@ -607,13 +611,6 @@ footer li i {
   margin: 40px 20px;
   display: flex;
   flex-direction: column;
-}
-
-.heartcolor {
-  background: linear-gradient(#FF79DA, #9356DC);
-  background-clip: text;
-  -webkit-background-clip: text;
-  color: transparent;
 }
 
 /*# sourceMappingURL=style.css.map */
