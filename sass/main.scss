@@ -1,6 +1,7 @@
 @import "./reset";
 @import "./variables";
 @import "./typographie";
+@import "./LaPaletteduGoût";
 
 @import "./layouts/container";
 @import "./layouts/header";
@@ -9,6 +10,7 @@
 @import "./sections/location";
 @import "./sections/welcome";
 @import "./sections/steps";
+
 
 @import "./components/page_loading";
 @import "./components/badge";

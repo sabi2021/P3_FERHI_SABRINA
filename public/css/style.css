@@ -353,8 +353,24 @@ h1 {
 }
 
 h2 {
-  font-size: 100%;
+  font-size: 80%;
   font-weight: bold;
+}
+
+.divHeader {
+  position: relative;
+  padding-top: 25px;
+  padding-bottom: 10px;
+  padding-left: 25px;
+  padding-right: 25px;
+}
+.divHeader .leftArrow {
+  position: absolute;
+  left: 30px;
+  font-size: larger;
+}
+.divHeader .logo {
+  margin: auto;
 }
 
 .container {
@@ -453,7 +469,6 @@ footer li i {
 
 .stepList {
   margin-top: 20px;
-  margin-left: 10px;
 }
 
 .stepList li {
@@ -466,8 +481,11 @@ footer li i {
   border-radius: 20px;
   box-shadow: 0 5px 8px #e3dddd;
   text-align: center;
-  padding-top: 25px;
-  padding-bottom: 20px;
+  padding-top: 10px;
+  padding-bottom: 15px;
+  color: #666666;
+  margin-right: 30px;
+  margin-left: 0px;
 }
 .stepList li:hover {
   background-color: #ffdff6;
@@ -479,14 +497,14 @@ footer li i {
 .stepList li div {
   background-color: #9356DC;
   border-radius: 50px;
-  width: 25px;
-  height: 25px;
+  width: 20px;
+  height: 20px;
   color: white;
   text-align: center;
   font-weight: bold;
   margin-left: -13px;
   padding: 5px;
-  font-size: small;
+  font-size: medium;
   vertical-align: middle;
 }
 
@@ -548,6 +566,7 @@ footer li i {
   transform: scale(1);
   transition-property: transform;
   transition-duration: 400ms;
+  text-align: center;
 }
 .btn:hover {
   transform: scale(1);
