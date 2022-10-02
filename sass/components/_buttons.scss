@@ -1,8 +1,11 @@
 .btn {
     border-radius:50px;
-    width: 220px;
-    height: 45px;
-    font-size: 15px;
+//    width: 220px;
+//    height: 45px;
+//  Remplacement des px par des vw
+    width: 55vw;
+    height: 12vw;
+    font-size: 4vw;
     font-weight: bold;
     background: linear-gradient($color-secondary, $color-primary);
     color: $color-light;
@@ -14,7 +17,7 @@
     transition-property: transform;
     transition-duration: 400ms;
     text-align: center;
-
+    overflow: auto;
     &:hover {
        transform: scale(1);
        background:linear-gradient( lighten($color-secondary,5),lighten($color-primary, 5) ); 
