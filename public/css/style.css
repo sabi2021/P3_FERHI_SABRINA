@@ -481,34 +481,37 @@ footer li i {
   box-shadow: 0 5px 8px #e3dddd;
   text-align: center;
   padding-top: 10px;
-  padding-bottom: 15px;
+  padding-bottom: 10px;
   color: #666666;
-  margin-right: 30px;
-  margin-left: 0px;
+  margin-right: 0px;
+  margin-left: 5px;
+}
+.stepList li i {
+  font-size: 19px;
 }
 .stepList li:hover {
-  background-color: #ffdff6;
+  background-color: #f2eafb;
 }
 .stepList li:hover i {
-  color: purple;
+  color: #9356DC;
 }
 
 .stepList li div {
   background-color: #9356DC;
   border-radius: 50px;
-  width: 20px;
-  height: 20px;
+  width: 15px;
+  height: 15px;
   color: white;
   text-align: center;
-  font-weight: bold;
   margin-left: -13px;
   padding: 5px;
-  font-size: medium;
+  font-size: 13px;
   vertical-align: middle;
 }
 
 .stepList li h2 {
   color: #000;
+  font-weight: normal;
   margin-right: 70px;
 }
 
@@ -552,10 +555,8 @@ footer li i {
 
 .btn {
   border-radius: 50px;
-  width: 55vw;
-  height: 12vw;
-  font-size: 4vw;
-  font-weight: bold;
+  font-size: 16px;
+  padding: 16px;
   background: linear-gradient(#FF79DA, #9356DC);
   color: #fff;
   margin: 30px 40px;
@@ -618,6 +619,9 @@ footer li i {
   -webkit-background-clip: text;
   color: transparent;
   display: none;
+}
+.card .description .favori:hover {
+  cursor: pointer;
 }
 .card .description .favori:hover .hearttransparent {
   display: none;
