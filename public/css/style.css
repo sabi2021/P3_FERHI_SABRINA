@@ -369,6 +369,123 @@ h2 {
   width: 100%;
 }
 
+.divMain .menu {
+  padding: 18px;
+  background-color: #f8f6f6;
+  border-radius: 50px 50px 0px 0px;
+}
+.divMain .menu .titreMenu {
+  font-family: Shrikhand;
+  font-size: 27px;
+  overflow: hidden;
+}
+.divMain .menu .titreMenu .heartcolor {
+  display: none;
+}
+.divMain .menu .titreMenu:hover .hearttransparent {
+  display: none;
+}
+.divMain .menu .titreMenu:hover .heartcolor {
+  display: inline;
+  color: #9356DC;
+}
+.divMain .menu .titreMenu i {
+  margin-top: 5px;
+  margin-left: 25px;
+}
+.divMain .menu .cardElementMenu {
+  margin-top: 20px;
+  font-size: 18px;
+}
+.divMain .menu .cardElementMenu .elementMenuTitre {
+  font-variant: small-caps;
+  color: #b3b3b3;
+}
+.divMain .menu .cardElementMenu .elementMenuTitre {
+  border-bottom: 4px solid #99E2D0;
+  padding-bottom: 5px;
+  width: 35px;
+  font-weight: 300;
+  font-size: 15px;
+}
+.divMain .menu .cardElementMenu .elementMenu {
+  display: flex;
+  justify-content: space-between;
+  background-color: #fff;
+  border-radius: 10px;
+  margin-top: 25px;
+  animation: elementMenu 2000ms;
+  animation-delay: 0ms;
+  animation-fill-mode: backwards;
+  width: 100%;
+  overflow: hidden;
+}
+.divMain .menu .cardElementMenu .elementMenu:hover .validate {
+  right: 0px;
+}
+@keyframes elementMenu {
+  0% {
+    transform: translateY(50%);
+    opacity: 0;
+  }
+  100% {
+    transform: translate(0%);
+    opacity: 2;
+  }
+}
+.divMain .menu .cardElementMenu .elementMenu .platDescription {
+  white-space: nowrap;
+  overflow: hidden;
+  width: 70%;
+  align-self: center;
+  margin: 10px;
+}
+.divMain .menu .cardElementMenu .elementMenu .platDescription .titrePlat {
+  font-weight: bold;
+}
+.divMain .menu .cardElementMenu .elementMenu .platDescription .accompagnementPlat {
+  color: #b3b3b3;
+  font-size: 15px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.divMain .menu .cardElementMenu .elementMenu .platPrix {
+  margin: 10px;
+  margin-top: 35px;
+  font-size: 15px;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 20%;
+  font-size: 12px;
+  padding-top: 25px;
+  transition: transform 1000ms ease-in-out;
+  transform: translate(-65px);
+  padding-left: 65px;
+}
+.divMain .menu .cardElementMenu .elementMenu .validate {
+  display: flex;
+  align-items: center;
+  background-color: #b9ebdf;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  width: 50px;
+  position: relative;
+  right: -50px;
+  transition: transform 500ms, right 500ms, rotate 1000ms;
+}
+.divMain .menu .cardElementMenu .elementMenu .elementMenu:hover .validate {
+  transform: right 0px;
+  rotate: 360deg;
+  color: red;
+}
+.divMain .menu .cardElementMenu .elementMenu .elementMenu:hover .fa-check-circle {
+  transform: rotate(360deg);
+  color: red;
+}
+
 .container {
   padding: 30px 15px;
 }
@@ -420,6 +537,7 @@ footer .partenaire {
 footer li {
   margin-bottom: 10px;
   font-size: 14px;
+  color: #fff;
 }
 footer li i {
   margin-right: 5px;
@@ -477,7 +595,7 @@ footer li i {
   font-size: 17px;
   margin-bottom: 25px;
   background-color: #f8f6f6;
-  border-radius: 20px;
+  border-radius: 22px;
   box-shadow: 0 5px 8px #e3dddd;
   text-align: center;
   padding-top: 10px;

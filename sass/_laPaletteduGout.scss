@@ -11,3 +11,160 @@
     }
    
 }
+
+.divMain{
+
+    
+    .menu {
+
+        padding:18px;
+        background-color: darken($color-bg-main, 1);
+        border-radius: 50px 50px 0px 0px;
+
+        .titreMenu{
+
+            
+            font-family: Shrikhand;
+            font-size: 27px;
+            overflow: hidden;
+
+            .heartcolor {
+                display: none;
+            }
+
+            &:hover {
+                
+                .hearttransparent {
+                    display: none;
+                }
+                .heartcolor {
+                    display:inline;
+                    color: $color-primary;
+                }
+            }
+
+            
+            i{
+                margin-top:5px;
+                margin-left:25px;
+               
+            }
+        }
+
+        .cardElementMenu{
+            margin-top: 20px;
+            font-size: 18px;
+
+            .elementMenuTitre{
+                font-variant: small-caps;
+                color: lighten($color-text-secondary,30);
+            }
+            .elementMenuTitre{
+                border-bottom: 4px solid #99E2D0;
+                padding-bottom: 5px;
+                width: 35px;
+                font-weight: 300;
+                font-size: 15px;
+                
+             }
+
+             .elementMenu{
+                display: flex;
+                justify-content: space-between;
+                background-color: $color-light;
+                border-radius: 10px;
+                margin-top: 25px;
+                animation: elementMenu 2000ms;
+                animation-delay: 0ms;
+                animation-fill-mode: backwards;
+                width: 100%;
+                overflow: hidden;
+                
+                &:hover .validate{
+                    right: 0px;
+                   
+                   
+                }
+                @keyframes elementMenu {
+                    0%{
+                        transform: translateY(50%);
+                        opacity: 0;
+                    }
+                    100%{
+                        transform: translate(0%);
+                        opacity: 2;
+                    
+                    }   
+                }
+
+                .platDescription {
+                    
+                    white-space: nowrap;
+                    overflow: hidden;
+                    width: 70%;
+                    align-self: center;
+                    margin: 10px;
+                    
+                    .titrePlat{
+                        font-weight: bold;
+                        
+                    }
+                    .accompagnementPlat{
+                        color: lighten($color-text-secondary,30);
+                        font-size: 15px;
+                        white-space: nowrap;
+                        overflow: hidden;
+                        text-overflow: ellipsis ;
+                    }
+                }
+                
+            
+
+                .platPrix{
+                    margin: 10px;
+                    margin-top: 35px; 
+                    font-size: 15px;
+                    font-weight: bold;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    width: 20%;
+                    font-size: 12px;
+                    padding-top: 25px;
+                    transition: transform 1000ms ease-in-out;
+                    transform: translate(-65px);
+                    padding-left: 65px;
+                    
+                }
+                .validate{
+                    display: flex;
+                    align-items: center;
+                    background-color: lighten($color-accent, 8);
+                    border-top-right-radius: 10px;
+                    border-bottom-right-radius: 10px;
+                    width: 50px;
+                    position: relative;
+                    right: -50px;
+                    transition: transform 500ms,right 500ms,rotate 1000ms;
+                   
+                    }
+                    .elementMenu:hover .validate  {
+                        transform: right 0px ;
+                         rotate:360deg;
+                         color: red;
+                      }
+
+                    .elementMenu:hover .fa-check-circle {
+                        transform: rotate(360deg);
+                        color: red;
+                      }
+
+                
+                }
+               
+             }
+
+            
+        }
+    }
+    
