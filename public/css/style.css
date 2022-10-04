@@ -542,6 +542,11 @@ footer li {
 footer li i {
   margin-right: 5px;
 }
+footer li a {
+  color: #fff;
+  text-decoration: none;
+  cursor: pointer;
+}
 
 .location {
   background-color: #eeebeb;

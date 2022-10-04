@@ -51,5 +51,11 @@ footer {
         i {
             margin-right: 5px;
         }
+        a {
+            color: $color-light;
+            text-decoration: none;
+            cursor: pointer;
+        }
+        
     }
 }
