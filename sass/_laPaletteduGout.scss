@@ -8,13 +8,18 @@
     img{
         height: 100%;
         width: 100%;
+        object-fit: contain;
+        
+        
+       
     }
    
 }
 
 .divMain{
-
-    
+    position: relative;
+    margin-top: -100px;
+    z-index:auto;
     .menu {
 
         padding:18px;
@@ -57,14 +62,14 @@
 
             .elementMenuTitre{
                 font-variant: small-caps;
-                color: lighten($color-text-secondary,30);
+                color: lighten($color-text,40);
             }
             .elementMenuTitre{
                 border-bottom: 4px solid #99E2D0;
                 padding-bottom: 5px;
                 width: 35px;
                 font-weight: 300;
-                font-size: 15px;
+              
                 
              }
 
@@ -72,12 +77,8 @@
                 display: flex;
                 justify-content: space-between;
                 background-color: $color-light;
-                border-radius: 10px;
-                margin-top: 25px;
-                animation: elementMenu 2000ms;
-                animation-delay: 0ms;
-                animation-fill-mode: backwards;
-                width: 100%;
+                border-radius: 15px;
+                margin-top: 20px;
                 overflow: hidden;
                 
                 &:hover .validate{
@@ -110,11 +111,12 @@
                         
                     }
                     .accompagnementPlat{
-                        color: lighten($color-text-secondary,30);
+                        color: lighten($color-text,40);
                         font-size: 15px;
                         white-space: nowrap;
                         overflow: hidden;
                         text-overflow: ellipsis ;
+                        margin-top: 5px;
                     }
                 }
                 
@@ -151,12 +153,7 @@
                     .elementMenu:hover .validate  {
                         transform: right 0px ;
                          rotate:360deg;
-                         color: red;
-                      }
-
-                    .elementMenu:hover .fa-check-circle {
-                        transform: rotate(360deg);
-                        color: red;
+                       
                       }
 
                 
