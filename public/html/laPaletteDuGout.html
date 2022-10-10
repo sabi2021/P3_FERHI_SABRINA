@@ -1,18 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/public/css/style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer"
-    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+        integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link href="http://fonts.cdnfonts.com/css/roboto" rel="stylesheet">
     <link href="http://fonts.cdnfonts.com/css/shrikhand" rel="stylesheet">
     <title>Oh My Food</title>
 </head>
+
 <body>
-    
+
     <!--header-->
     <header>
         <div class="leftArrow">
@@ -23,64 +26,77 @@
 
         <img class="logo" src="/assets/images/logo/ohmyfood.png" alt="logo">
     </header>
-     <!--header-->
+    <!--header-->
 
-        <div class="backgroundImage">
-            <img src="/assets/images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="">
-        </div>
-    
-    
- <!--main-->
+    <div class="backgroundImage">
+        <img src="/assets/images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="">
+    </div>
+
+
+    <!--main-->
     <main>
         <!--debut article1-->
-        <article class="divMain ">
-           
-            <div class="menu">
-                <div class="titreMenu">
-                    La palette du goût
-                    <i class="far fa-heart hearttransparent"></i>
-                    <i class="fas fa-heart heartcolor"></i>
-                </div>  
-                     <div class="cardElementMenu">
-                        <div class="elementMenuTitre">
-                            entrées
-                        </div>
-                        <div class="elementMenu">
-                            <div class="platDescription">
-                                <div class="titrePlat">Fricassée d'escargot</div>
-                                <div class="accompagnementPlat">Au piment d'espelette</div>
-                            </div>
-                            <div class="platPrix">25€ </div> 
-                            <div class="validate">
-                                <i class="fas fa-check-circle"></i>
-                            </div> 
-                        </div>
-                        <div class="elementMenu">
-                            <div class="platDescription">
-                                <div class="titrePlat">Foie gras de canard mi-cuit</div>
-                                <div class="accompagnementPlat">Et ses corpeaux de truffe noir</div>
-                            </div>
-                            <div class="platPrix">35€ </div> 
-                            <div class="validate">
-                                <i class="fas fa-check-circle"></i>
-                            </div> 
-                        </div>
-                        <div class="elementMenu">
-                            <div class="platDescription">
-                                <div class="titrePlat">Oeuf au plat</div>
-                                <div class="accompagnementPlat">Assaisonné à la truffe sur lit de caive</div>
-                            </div>
-                            <div class="platPrix">20€ </div> 
-                            <div class="validate">
-                                <i class="fas fa-check-circle"></i>
-                            </div> 
-                        
-                    
-                        
+        <div class="menu">
+            <div class="titreMenu">
+                La palette du goût
+                <i class="far fa-heart hearttransparent"></i>
+                <i class="fas fa-heart heartcolor"></i>
+            </div>
+            <div class="cardElementMenu">
+                <div class="elementMenuTitre">
+                    entrées
+                </div>
+                <article class="elementMenu">
+                    <div class="platDescription">
+                        <div class="titrePlat">Fricassée d'escargot</div>
+                        <div class="accompagnementPlat">Au piment d'espelette</div>
+                    </div>
+                    <div class="platPrix">25€ </div>
+                    <div class="validate">
+                        <i class="fas fa-check-circle"></i>
+                    </div>
+                </article>
+                <article class="elementMenu">
+                    <div class="platDescription">
+                        <div class="titrePlat">Foie gras de canard mi-cuit</div>
+                        <div class="accompagnementPlat">Et ses corpeaux de truffe noir</div>
+                    </div>
+                    <div class="platPrix">35€ </div>
+                    <div class="validate">
+                        <i class="fas fa-check-circle"></i>
+                    </div>
+                </article>
+                <article class="elementMenu">
+                    <div class="platDescription">
+                        <div class="titrePlat">Oeuf au plat</div>
+                        <div class="accompagnementPlat">Assaisonné à la truffe sur lit de caive</div>
+                    </div>
+                    <div class="platPrix">20€ </div>
+                    <div class="validate">
+                        <i class="fas fa-check-circle"></i>
+                    </div>
+                </article>
+
+                <!-- Display flex -->
+                <article class="card_menu">
+                    <div class="card_menu__text">
+                        <h3>Oeuf au plat</h3>
+                        Assaisonné à la truffe sur lit de caive
+
+                        <!-- Positionnement absolument -->
+                        <!-- <div class="card_menu__price">20€</div> -->
+                    </div>
+                    <div class="card_menu__submit">
+                        <i class="fas fa-check-circle"></i>
+                    </div>
+                </article>
+
+            </div>
+        </div>
     </main>
-<!--main-->
-   
-<!-- footer -->
+    <!--main-->
+
+    <!-- footer -->
     <footer>
         <div class="footertext">
             ohmyfood
@@ -109,4 +125,5 @@
     </footer>
     <!-- footer -->
 </body>
+
 </html>

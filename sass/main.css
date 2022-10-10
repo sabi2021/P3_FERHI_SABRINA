@@ -81,7 +81,8 @@ abbr[title] {
   /* 1 */
   text-decoration: underline;
   /* 2 */
-  text-decoration: underline dotted;
+  -webkit-text-decoration: underline dotted;
+          text-decoration: underline dotted;
   /* 2 */
 }
 
@@ -367,52 +368,54 @@ h2 {
 .backgroundImage img {
   height: 100%;
   width: 100%;
-  object-fit: contain;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 
-.menu {
+.divMain {
   position: relative;
   margin-top: -100px;
   z-index: auto;
+}
+.divMain .menu {
   padding: 18px;
   background-color: #f8f6f6;
   border-radius: 50px 50px 0px 0px;
 }
-.menu .titreMenu {
+.divMain .menu .titreMenu {
   font-family: Shrikhand;
   font-size: 27px;
   overflow: hidden;
 }
-.menu .titreMenu .heartcolor {
+.divMain .menu .titreMenu .heartcolor {
   display: none;
 }
-.menu .titreMenu:hover .hearttransparent {
+.divMain .menu .titreMenu:hover .hearttransparent {
   display: none;
 }
-.menu .titreMenu:hover .heartcolor {
+.divMain .menu .titreMenu:hover .heartcolor {
   display: inline;
   color: #9356DC;
 }
-.menu .titreMenu i {
+.divMain .menu .titreMenu i {
   margin-top: 5px;
   margin-left: 25px;
 }
-.menu .cardElementMenu {
+.divMain .menu .cardElementMenu {
   margin-top: 20px;
   font-size: 18px;
 }
-.menu .cardElementMenu .elementMenuTitre {
+.divMain .menu .cardElementMenu .elementMenuTitre {
   font-variant: small-caps;
   color: #666666;
 }
-.menu .cardElementMenu .elementMenuTitre {
+.divMain .menu .cardElementMenu .elementMenuTitre {
   border-bottom: 4px solid #99E2D0;
   padding-bottom: 5px;
   width: 35px;
   font-weight: 300;
-  text-transform: uppercase;
 }
-.menu .cardElementMenu .elementMenu {
+.divMain .menu .cardElementMenu .elementMenu {
   display: flex;
   justify-content: space-between;
   background-color: #fff;
@@ -420,8 +423,18 @@ h2 {
   margin-top: 20px;
   overflow: hidden;
 }
-.menu .cardElementMenu .elementMenu:hover .validate {
+.divMain .menu .cardElementMenu .elementMenu:hover .validate {
   right: 0px;
+}
+@-webkit-keyframes elementMenu {
+  0% {
+    transform: translateY(50%);
+    opacity: 0;
+  }
+  100% {
+    transform: translate(0%);
+    opacity: 2;
+  }
 }
 @keyframes elementMenu {
   0% {
@@ -433,17 +446,17 @@ h2 {
     opacity: 2;
   }
 }
-.menu .cardElementMenu .elementMenu .platDescription {
+.divMain .menu .cardElementMenu .elementMenu .platDescription {
   white-space: nowrap;
   overflow: hidden;
   width: 70%;
   align-self: center;
   margin: 10px;
 }
-.menu .cardElementMenu .elementMenu .platDescription .titrePlat {
+.divMain .menu .cardElementMenu .elementMenu .platDescription .titrePlat {
   font-weight: bold;
 }
-.menu .cardElementMenu .elementMenu .platDescription .accompagnementPlat {
+.divMain .menu .cardElementMenu .elementMenu .platDescription .accompagnementPlat {
   color: #666666;
   font-size: 15px;
   white-space: nowrap;
@@ -451,7 +464,7 @@ h2 {
   text-overflow: ellipsis;
   margin-top: 5px;
 }
-.menu .cardElementMenu .elementMenu .platPrix {
+.divMain .menu .cardElementMenu .elementMenu .platPrix {
   margin: 10px;
   margin-top: 35px;
   font-size: 15px;
@@ -466,7 +479,7 @@ h2 {
   transform: translate(-65px);
   padding-left: 65px;
 }
-.menu .cardElementMenu .elementMenu .validate {
+.divMain .menu .cardElementMenu .elementMenu .validate {
   display: flex;
   align-items: center;
   background-color: #b9ebdf;
@@ -477,21 +490,9 @@ h2 {
   right: -50px;
   transition: transform 500ms, right 500ms, rotate 1000ms;
 }
-.menu .cardElementMenu .elementMenu .elementMenu:hover .validate {
+.divMain .menu .cardElementMenu .elementMenu .elementMenu:hover .validate {
   transform: right 0px;
   rotate: 360deg;
-}
-.menu .card_menu {
-  background: #fff;
-}
-.menu .card_menu .card_menu__text {
-  background: rgba(255, 0, 0, 0.2);
-}
-.menu .card_menu .card_menu__price {
-  background: rgba(0, 38, 255, 0.2);
-}
-.menu .card_menu .card_menu__submit {
-  background: rgba(88, 240, 0, 0.2);
 }
 
 .container {
@@ -717,7 +718,8 @@ footer li a {
 .card img {
   width: 100%;
   height: 200px;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
   border-radius: 20px 20px 0px 0px;
 }
 .card .img {
@@ -765,6 +767,4 @@ footer li a {
   margin: 40px 20px;
   display: flex;
   flex-direction: column;
-}
-
-/*# sourceMappingURL=style.css.map */
+}/*# sourceMappingURL=main.css.map */
