@@ -3,6 +3,7 @@
     left: 20px;
     top: 25px;
     font-size: larger;
+    cursor: pointer;
 }
 
 .backgroundImage {
@@ -10,6 +11,7 @@
         height: 100%;
         width: 100%;
         object-fit: contain;
+
 
 
 
@@ -24,6 +26,7 @@
     padding: 18px;
     background-color: darken($color-bg-main, 1);
     border-radius: 50px 50px 0px 0px;
+    cursor: pointer;
 
     .titreMenu {
 
@@ -40,11 +43,12 @@
 
             .hearttransparent {
                 display: none;
+                color:linear-gradient($color-secondary, $color-primary);
             }
 
             .heartcolor {
                 display: inline;
-                color: $color-primary;
+                color:linear-gradient($color-secondary, $color-primary);
             }
         }
 
@@ -73,13 +77,21 @@
             text-transform: uppercase;
         }
 
-        .elementMenu {
+        .card_menu {
             display: flex;
             justify-content: space-between;
             background-color: $color-light;
             border-radius: 15px;
             margin-top: 20px;
             overflow: hidden;
+            & p{
+                color: lighten($color-text, 40);
+                     font-size: 15px;
+                     white-space: nowrap;
+                     overflow: hidden;
+                     text-overflow: ellipsis;
+                     margin-top: 5px;
+            }
 
             &:hover .validate {
                 right: 0px;
@@ -100,7 +112,7 @@
                 }
             }
 
-            .platDescription {
+            .card_menu__text{
 
                 white-space: nowrap;
                 overflow: hidden;
@@ -112,20 +124,18 @@
                     font-weight: bold;
 
                 }
-
-                .accompagnementPlat {
-                    color: lighten($color-text, 40);
+                .card_menu__price{
+                 
+                    margin: 10px;
+                    margin-top: 35px; 
                     font-size: 15px;
-                    white-space: nowrap;
-                    overflow: hidden;
-                    text-overflow: ellipsis;
-                    margin-top: 5px;
                 }
+
             }
 
 
 
-            .platPrix {
+            .card_menu__submit {
                 margin: 10px;
                 margin-top: 35px;
                 font-size: 15px;
@@ -142,22 +152,22 @@
 
             }
 
-            .validate {
-                display: flex;
-                align-items: center;
-                background-color: lighten($color-accent, 8);
-                border-top-right-radius: 10px;
-                border-bottom-right-radius: 10px;
-                width: 50px;
-                position: relative;
-                right: -50px;
-                transition: transform 500ms, right 500ms, rotate 1000ms;
+            // .validate {
+            //     display: flex;
+            //     align-items: center;
+            //     background-color: lighten($color-accent, 8);
+            //     border-top-right-radius: 10px;
+            //     border-bottom-right-radius: 10px;
+            //     width: 50px;
+            //     position: relative;
+            //     right: -50px;
+            //     transition: transform 500ms, right 500ms, rotate 1000ms;
 
-            }
+            // }
 
-            .elementMenu:hover .validate {
-                transform: right 0px;
-                rotate: 360deg;
+            // .elementMenu:hover .validate {
+            //     transform: right 0px;
+            //     rotate: 360deg;
 
             }
 
@@ -167,19 +177,4 @@
     }
 
 
-    .card_menu {
-        background: #fff;
-
-        .card_menu__text {
-            background: rgba(255, 0, 0, 0.2);
-        }
-
-        .card_menu__price {
-            background: rgba(0, 38, 255, 0.2);
-        }
-
-        .card_menu__submit {
-            background: rgba(88, 240, 0, 0.2);
-        }
-    }
-}
+   
