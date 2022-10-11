@@ -28,27 +28,27 @@
     border-radius: 50px 50px 0px 0px;
     cursor: pointer;
 
-    .titreMenu {
-
-
+    .memu_title {
         font-family: Shrikhand;
         font-size: 27px;
         overflow: hidden;
 
         .heartcolor {
-            display: none;
+           display:none;
+        
         }
 
         &:hover {
 
             .hearttransparent {
                 display: none;
-                color:linear-gradient($color-secondary, $color-primary);
+                
+                
             }
 
             .heartcolor {
                 display: inline;
-                color:linear-gradient($color-secondary, $color-primary);
+                background-color:linear-gradient($color-secondary, $color-primary);
             }
         }
 
@@ -56,18 +56,16 @@
         i {
             margin-top: 5px;
             margin-left: 25px;
+            color:linear-gradient($color-secondary, $color-primary) ;
 
         }
     }
-
+   
     .cardElementMenu {
         margin-top: 20px;
         font-size: 18px;
 
-        .elementMenuTitre {
-            font-variant: small-caps;
-            color: lighten($color-text, 40);
-        }
+      
 
         .elementMenuTitre {
             border-bottom: 4px solid #99E2D0;
@@ -87,30 +85,77 @@
             & p{
                 color: lighten($color-text, 40);
                      font-size: 15px;
+                     width: 220px;
                      white-space: nowrap;
-                     overflow: hidden;
                      text-overflow: ellipsis;
+                     overflow: hidden;
+                     box-sizing: border-box;
                      margin-top: 5px;
             }
 
-            &:hover .validate {
-                right: 0px;
+            }
+            &:hover {
+                & .card_menu__text{
+                    white-space: nowrap;
+                    text-overflow: ellipsis;
+                    overflow: hidden;
+                    box-sizing: border-box;
+                    width: 60%;
+                    
+                    & h3 {
+                        white-space: nowrap;
+                        text-overflow: ellipsis;
+                        overflow: hidden;
+                        box-sizing: border-box;
+                    }
+                    & p{
+                        white-space: nowrap;
+                        text-overflow: ellipsis;
+                        overflow: hidden;
+                        box-sizing: border-box; 
+                    }
+                    
+                    & .card_menu__submit{
+                        margin-right: -65px;
+                        transform: translate(-65px); 
+                    }
+                    & i{
+                        transform: translate(-65px); 
+                    }
+                }
 
 
             }
 
-            @keyframes elementMenu {
-                0% {
-                    transform: translateY(50%);
-                    opacity: 0;
-                }
 
-                100% {
-                    transform: translate(0%);
-                    opacity: 2;
 
-                }
-            }
+
+
+
+
+
+
+
+
+
+
+        //     :hover {
+           
+        //     @keyframes card_menu {
+        //         0% {
+        //             transform: translateY(50%);
+        //             opacity: 0;
+        //         }
+
+        //         100% {
+        //             transform: translate(0%);
+        //             opacity: 2;
+
+        //         }
+        //     }
+                 
+        //   }
+
 
             .card_menu__text{
 
@@ -119,16 +164,15 @@
                 width: 70%;
                 align-self: center;
                 margin: 10px;
-
-                .titrePlat {
-                    font-weight: bold;
-
-                }
+                 }
                 .card_menu__price{
-                 
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
                     margin: 10px;
                     margin-top: 35px; 
                     font-size: 15px;
+                    transition: transform 600ms ease-in-out;
                 }
 
             }
@@ -136,20 +180,20 @@
 
 
             .card_menu__submit {
-                margin: 10px;
-                margin-top: 35px;
-                font-size: 15px;
-                font-weight: bold;
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                width: 20%;
-                font-size: 12px;
-                padding-top: 25px;
-                transition: transform 1000ms ease-in-out;
-                transform: translate(-65px);
-                padding-left: 65px;
+                    display: flex;
+                    align-items: center;
+                    background-color: lighten($color-accent, 8);
+                    border-top-right-radius: 10px;
+                    border-bottom-right-radius: 10px;
+                  
+                    width: 50px;
+                    position: relative;
+                     transition: transform 500ms, right 500ms, rotate 1000ms;
 
+            }
+                
+             
+           
             }
 
             // .validate {
@@ -169,12 +213,12 @@
             //     transform: right 0px;
             //     rotate: 360deg;
 
-            }
+            
 
 
-        }
+        
 
-    }
+    
 
 
    

@@ -384,33 +384,29 @@ h3 {
   border-radius: 50px 50px 0px 0px;
   cursor: pointer;
 }
-.menu .titreMenu {
+.menu .memu_title {
   font-family: Shrikhand;
   font-size: 27px;
   overflow: hidden;
 }
-.menu .titreMenu .heartcolor {
+.menu .memu_title .heartcolor {
   display: none;
 }
-.menu .titreMenu:hover .hearttransparent {
+.menu .memu_title:hover .hearttransparent {
   display: none;
-  color: linear-gradient(#FF79DA, #9356DC);
 }
-.menu .titreMenu:hover .heartcolor {
+.menu .memu_title:hover .heartcolor {
   display: inline;
-  color: linear-gradient(#FF79DA, #9356DC);
+  background-color: linear-gradient(#FF79DA, #9356DC);
 }
-.menu .titreMenu i {
+.menu .memu_title i {
   margin-top: 5px;
   margin-left: 25px;
+  color: linear-gradient(#FF79DA, #9356DC);
 }
 .menu .cardElementMenu {
   margin-top: 20px;
   font-size: 18px;
-}
-.menu .cardElementMenu .elementMenuTitre {
-  font-variant: small-caps;
-  color: #666666;
 }
 .menu .cardElementMenu .elementMenuTitre {
   border-bottom: 4px solid #99E2D0;
@@ -430,53 +426,64 @@ h3 {
 .menu .cardElementMenu .card_menu p {
   color: #666666;
   font-size: 15px;
+  width: 220px;
   white-space: nowrap;
-  overflow: hidden;
   text-overflow: ellipsis;
+  overflow: hidden;
+  box-sizing: border-box;
   margin-top: 5px;
 }
-.menu .cardElementMenu .card_menu:hover .validate {
-  right: 0px;
+.menu .cardElementMenu:hover .card_menu__text {
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  box-sizing: border-box;
+  width: 60%;
 }
-@keyframes elementMenu {
-  0% {
-    transform: translateY(50%);
-    opacity: 0;
-  }
-  100% {
-    transform: translate(0%);
-    opacity: 2;
-  }
+.menu .cardElementMenu:hover .card_menu__text h3 {
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  box-sizing: border-box;
 }
-.menu .cardElementMenu .card_menu .card_menu__text {
+.menu .cardElementMenu:hover .card_menu__text p {
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  box-sizing: border-box;
+}
+.menu .cardElementMenu:hover .card_menu__text .card_menu__submit {
+  margin-right: -65px;
+  transform: translate(-65px);
+}
+.menu .cardElementMenu:hover .card_menu__text i {
+  transform: translate(-65px);
+}
+.menu .cardElementMenu .card_menu__text {
   white-space: nowrap;
   overflow: hidden;
   width: 70%;
   align-self: center;
   margin: 10px;
 }
-.menu .cardElementMenu .card_menu .card_menu__text .titrePlat {
-  font-weight: bold;
-}
-.menu .cardElementMenu .card_menu .card_menu__text .card_menu__price {
-  margin: 10px;
-  margin-top: 35px;
-  font-size: 15px;
-}
-.menu .cardElementMenu .card_menu .card_menu__submit {
-  margin: 10px;
-  margin-top: 35px;
-  font-size: 15px;
-  font-weight: bold;
+.menu .cardElementMenu .card_menu__price {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 20%;
-  font-size: 12px;
-  padding-top: 25px;
-  transition: transform 1000ms ease-in-out;
-  transform: translate(-65px);
-  padding-left: 65px;
+  margin: 10px;
+  margin-top: 35px;
+  font-size: 15px;
+  transition: transform 600ms ease-in-out;
+}
+.menu .card_menu__submit {
+  display: flex;
+  align-items: center;
+  background-color: #b9ebdf;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  width: 50px;
+  position: relative;
+  transition: transform 500ms, right 500ms, rotate 1000ms;
 }
 
 .container {
