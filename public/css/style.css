@@ -389,15 +389,25 @@ h3 {
   font-size: 27px;
   overflow: hidden;
 }
-.menu .memu_title .heartcolor {
+.menu .memu_title .favori {
+  font-size: 25px;
+  overflow: hidden;
+}
+.menu .memu_title .favori .heartcolor {
+  background: linear-gradient(#FF79DA, #9356DC);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
   display: none;
 }
-.menu .memu_title:hover .hearttransparent {
+.menu .memu_title .favori:hover {
+  cursor: pointer;
+}
+.menu .memu_title .favori:hover .hearttransparent {
   display: none;
 }
-.menu .memu_title:hover .heartcolor {
-  display: inline;
-  background-color: linear-gradient(#FF79DA, #9356DC);
+.menu .memu_title .favori:hover .heartcolor {
+  display: block;
 }
 .menu .memu_title i {
   margin-top: 5px;
@@ -409,6 +419,7 @@ h3 {
   font-size: 18px;
 }
 .menu .cardElementMenu .elementMenuTitre {
+  color: #737373;
   border-bottom: 4px solid #99E2D0;
   padding-bottom: 5px;
   width: 35px;
@@ -424,8 +435,8 @@ h3 {
   overflow: hidden;
 }
 .menu .cardElementMenu .card_menu p {
-  color: #666666;
-  font-size: 15px;
+  color: #737373;
+  font-size: 16px;
   width: 220px;
   white-space: nowrap;
   text-overflow: ellipsis;
@@ -453,8 +464,10 @@ h3 {
   box-sizing: border-box;
 }
 .menu .cardElementMenu:hover .card_menu__text .card_menu__submit {
-  margin-right: -65px;
-  transform: translate(-65px);
+  width: 100px;
+  height: 10px;
+  transition: transform 400ms ease-in-out;
+  transform: translate(100% 0);
 }
 .menu .cardElementMenu:hover .card_menu__text i {
   transform: translate(-65px);
@@ -473,7 +486,6 @@ h3 {
   margin: 10px;
   margin-top: 35px;
   font-size: 15px;
-  transition: transform 600ms ease-in-out;
 }
 .menu .card_menu__submit {
   display: flex;
