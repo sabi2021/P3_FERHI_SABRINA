@@ -430,43 +430,16 @@ h3 {
 }
 .menu .cardElementMenu .card_menu h2 {
   margin-top: 5px;
+  margin-bottom: 5px;
 }
-.menu .cardElementMenu:hover .card_menu__text {
-  white-space: nowrap;
-  text-overflow: ellipsis;
-  overflow: hidden;
-  box-sizing: border-box;
-  width: 60%;
-}
-.menu .cardElementMenu:hover .card_menu__text h2 {
-  white-space: nowrap;
-  text-overflow: ellipsis;
-  overflow: hidden;
-  box-sizing: border-box;
-}
-.menu .cardElementMenu:hover .card_menu__text h3 {
-  white-space: nowrap;
-  text-overflow: ellipsis;
-  overflow: hidden;
-  box-sizing: border-box;
-}
-.menu .cardElementMenu:hover .card_menu__text .card_menu__submit {
-  width: 100px;
-  height: 10px;
-  transition: transform 400ms ease-in-out;
-  transform: translate(100% 0);
-}
-.menu .cardElementMenu:hover .card_menu__text i {
-  transform: translate(-65px);
-}
-.menu .cardElementMenu .card_menu__text {
+.menu .cardElementMenu .card_menu .card_menu__text {
   white-space: nowrap;
   overflow: hidden;
   width: 70%;
   align-self: center;
   margin: 10px;
 }
-.menu .cardElementMenu .card_menu__price {
+.menu .cardElementMenu .card_menu .card_menu__price {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -475,15 +448,41 @@ h3 {
   font-size: 15px;
   font-weight: bold;
 }
-.menu .card_menu__submit {
+.menu .cardElementMenu .card_menu .card_menu__submit {
   display: flex;
   align-items: center;
   background-color: #b9ebdf;
   border-top-right-radius: 10px;
   border-bottom-right-radius: 10px;
+  transition-timing-function: ease-in;
+  transition: width 2s;
   width: 50px;
   position: relative;
-  transition: transform 500ms, right 500ms, rotate 1000ms;
+}
+.menu .cardElementMenu .card_menu .card_menu__submit .fa-check-circle {
+  color: #fff;
+}
+.menu .cardElementMenu .card_menu:hover .card_menu__text {
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  box-sizing: border-box;
+  width: 60%;
+}
+.menu .cardElementMenu .card_menu:hover .card_menu__text h2 {
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  box-sizing: border-box;
+}
+.menu .cardElementMenu .card_menu:hover .card_menu__text h3 {
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  box-sizing: border-box;
+}
+.menu .cardElementMenu .card_menu:hover .card_menu__text .card_menu__submit {
+  width: 10px;
 }
 
 .container {
