@@ -23,38 +23,13 @@
     border-radius: 50px 50px 0px 0px;
     cursor: pointer;
 
-    .memu_title {
+    .menu_title {
         font-family: Shrikhand;
         font-size: 25px;
         overflow: hidden;
-
+        display: flex;
           
-        .favori {
-            font-size: 25px;
-            overflow: hidden;
-
-            .heartcolor {
-                background: linear-gradient($color-secondary, $color-primary);
-                background-clip: text;
-                -webkit-background-clip: text;
-                color: transparent;
-                display: none;
-            }
-
-            &:hover {
-                cursor: pointer;
-
-                .hearttransparent {
-                    position: absolute;
-                     margin-right: 30px;
-                    display: none;
-                }
-
-                .heartcolor {
-                    display: block;
-                }
-            }
-        }
+      
 
         i {
             margin-top: 5px;

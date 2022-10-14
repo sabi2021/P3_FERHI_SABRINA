@@ -1,0 +1,27 @@
+.favori {
+    font-size: 25px;
+    overflow: hidden;
+    align-self: center;
+
+    .heartcolor {
+        background: linear-gradient($color-secondary, $color-primary);
+        background-clip: text;
+        -webkit-background-clip: text;
+        color: transparent;
+        display: none;
+    }
+
+    &:hover {
+        cursor: pointer;
+
+        .hearttransparent {
+            position: absolute;
+             margin-right: 30px;
+            display: none;
+        }
+
+        .heartcolor {
+            display: block;
+        }
+    }
+}

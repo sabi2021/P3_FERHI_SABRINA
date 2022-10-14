@@ -385,34 +385,13 @@ h3 {
   border-radius: 50px 50px 0px 0px;
   cursor: pointer;
 }
-.menu .memu_title {
+.menu .menu_title {
   font-family: Shrikhand;
   font-size: 25px;
   overflow: hidden;
+  display: flex;
 }
-.menu .memu_title .favori {
-  font-size: 25px;
-  overflow: hidden;
-}
-.menu .memu_title .favori .heartcolor {
-  background: linear-gradient(#FF79DA, #9356DC);
-  background-clip: text;
-  -webkit-background-clip: text;
-  color: transparent;
-  display: none;
-}
-.menu .memu_title .favori:hover {
-  cursor: pointer;
-}
-.menu .memu_title .favori:hover .hearttransparent {
-  position: absolute;
-  margin-right: 30px;
-  display: none;
-}
-.menu .memu_title .favori:hover .heartcolor {
-  display: block;
-}
-.menu .memu_title i {
+.menu .menu_title i {
   margin-top: 5px;
   margin-left: 25px;
   color: linear-gradient(#FF79DA, #9356DC);
@@ -778,6 +757,30 @@ footer li a {
   margin: 40px 20px;
   display: flex;
   flex-direction: column;
+}
+
+.favori {
+  font-size: 25px;
+  overflow: hidden;
+  align-self: center;
+}
+.favori .heartcolor {
+  background: linear-gradient(#FF79DA, #9356DC);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  display: none;
+}
+.favori:hover {
+  cursor: pointer;
+}
+.favori:hover .hearttransparent {
+  position: absolute;
+  margin-right: 30px;
+  display: none;
+}
+.favori:hover .heartcolor {
+  display: block;
 }
 
 /*# sourceMappingURL=style.css.map */
