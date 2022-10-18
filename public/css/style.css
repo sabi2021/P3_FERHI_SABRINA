@@ -535,7 +535,7 @@ footer li a {
   justify-content: center;
   align-items: center;
   position: fixed;
-  background-color: whitesmoke;
+  background-color: #fff;
   opacity: 0.8;
   inset: 0px;
   z-index: 1;
@@ -548,24 +548,6 @@ footer li a {
   }
   100% {
     transform: scale(0);
-  }
-}
-.loader .fa-spinner {
-  border: 10px solid transparent;
-  border-left: transparent;
-  border-top: 10px solid #FF79DA;
-  color: transparent;
-  width: 80px;
-  height: 80px;
-  border-radius: 50%;
-  animation: border 1s linear infinite;
-}
-@keyframes border {
-  0% {
-    transform: rotate(0deg);
-  }
-  100% {
-    transform: rotate(360deg);
   }
 }
 
