@@ -1,4 +1,4 @@
-.btn {
+button{
     border-radius:50px;
     font-size: 16px;
     padding: 16px;
@@ -13,6 +13,10 @@
     transition-duration: 400ms;
     text-align: center;
     overflow: auto;
+    
+    .btn{
+      margin: right 100px; ;
+    }
     &:hover {
        transform: scale(1);
        background:linear-gradient( lighten($color-secondary,5),lighten($color-primary, 5) ); 

@@ -646,7 +646,7 @@ footer li a {
   font-weight: 1000;
 }
 
-.btn {
+button {
   border-radius: 50px;
   font-size: 16px;
   padding: 16px;
@@ -662,7 +662,10 @@ footer li a {
   text-align: center;
   overflow: auto;
 }
-.btn:hover {
+button .btn {
+  margin: right 100px;
+}
+button:hover {
   transform: scale(1);
   background: linear-gradient(#ff93e1, #a16be0);
 }
