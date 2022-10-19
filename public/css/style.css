@@ -477,6 +477,18 @@ h3 {
     margin: 0px 20px;
   }
 }
+@media (min-width: 768px) {
+  .Menu {
+    margin-top: 80px;
+  }
+  .elementMenuTitre {
+    margin-top: 15px;
+    width: 30%;
+  }
+  .card_menu__text {
+    width: 90%;
+  }
+}
 .container {
   padding: 30px 15px;
 }
