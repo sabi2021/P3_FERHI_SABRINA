@@ -687,12 +687,13 @@ button {
   text-align: center;
   overflow: auto;
 }
-button .btn {
-  margin: right 100px;
-}
 button:hover {
   transform: scale(1);
   background: linear-gradient(#ff93e1, #a16be0);
+}
+
+.btnCommander {
+  margin: 4% 33%;
 }
 
 .card {
