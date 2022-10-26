@@ -27,7 +27,7 @@
 
 @media (min-width: 768px){
   
-  .cardElementMenu{
+  .card_menu_parent{
   
       width: 100%;
       display: flex;
@@ -35,6 +35,9 @@
       justify-content: flex-start;
       margin: 0px 20px;
    
+      .card_menu{
+        margin: 0px 10px;
+      }
   }
 }
 
