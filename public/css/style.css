@@ -546,24 +546,33 @@ h3 {
 }
 
 @media (min-width: 768px) {
-  .stepList ul {
-    display: block;
+  .container steps {
+    display: flex;
   }
-  .stepList ul li {
+  .stepList {
+    display: flex;
     width: 100%;
     margin: 0px 20px;
   }
+  .stepList li {
+    margin-right: 25px;
+  }
+  .stepList li i {
+    margin: 0 10px;
+  }
+  .container container_bg restaurants li {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
 }
 @media (min-width: 768px) {
-  .Menu {
-    margin-top: 80px;
-  }
-  .elementMenuTitre {
-    margin-top: 15px;
-    width: 30%;
-  }
-  .card_menu__text {
-    width: 90%;
+  .cardElementMenu {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    margin: 0px 20px;
   }
 }
 .container {
@@ -707,7 +716,6 @@ footer li a {
   padding-top: 10px;
   padding-bottom: 10px;
   color: #666666;
-  margin-right: 0px;
   margin-left: 5px;
 }
 .stepList li i {
