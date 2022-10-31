@@ -1,43 +1,48 @@
-// page d'acceuil//
+// page d'accueil //
+@media (min-width: 768px) {
 
-@media (min-width: 768px){
+  .stepList {
+    display: flex;
+    justify-content: space-between;
+    margin: 0px;
 
-  .container steps{
-    display: flex;
-  }
-  .stepList{
-    display: flex;
-    width: 100%;
-    margin: 0px 20px;
     li {
+      flex-grow: 1;
       margin-right: 25px;
 
-      i{
+      i {
         margin: 0 10px;
       }
     }
   }
-  .container container_bg restaurants li{
+
+  .restaurants {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    h1 {
+      flex-basis: 100%;
+    }
+
+    .card {
+      flex-basis: 24%;
+      flex-shrink: 0;
+    }
+  }
+}
+
+// les pages restaurants //
+@media (min-width: 768px) {
+
+  .card_menu_parent {
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
+    margin: 0px;
+
+    .card_menu {
+      flex-grow: 1;
+      margin: 0px 10px;
+    }
   }
 }
-// les pages restaurents//
-
-@media (min-width: 768px){
-  
-  .card_menu_parent{
-  
-      width: 100%;
-      display: flex;
-      flex-direction: row;
-      justify-content: flex-start;
-      margin: 0px 20px;
-   
-      .card_menu{
-        margin: 0px 10px;
-      }
-  }
-}
-
