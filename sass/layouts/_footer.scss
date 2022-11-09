@@ -23,6 +23,8 @@ footer {
         list-style-type: none;
         margin-left: -35px;
         
+        
+        
     }
 
     .fa-utensils {
@@ -32,23 +34,16 @@ footer {
     .proposition,
     .partenaire {
         font-weight: bold;
-        
-      
-        
-    }
+         }
 
 
     li {
         margin-bottom: 10px;
         font-size: 14px;
         color: $color-light;
+        align-items: center;
        
-        
-      
-        
-        
-
-        i {
+         i {
             margin-right: 5px;
         }
         a {
