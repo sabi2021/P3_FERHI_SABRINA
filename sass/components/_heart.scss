@@ -3,25 +3,43 @@
     overflow: hidden;
     align-self: center;
 
-    .heartcolor {
-        background: linear-gradient($color-secondary, $color-primary);
+    
+    & i{
+        font-size: 25px;
+        padding-bottom: 5px;
+        padding-right: 35px;
+    }
+
+    .favori i{
+        font-weight: 400;
+        background: linear-gradient(black black);
+        background-clip: border-box;
+        -webkit-background-clip: text;
+        color: transparent;
+        transition: opacity 1000ms
+    }
+    
+    & i:hover{
+        font-weight: 600;
+        background: linear-gradient($color-primary, $color-secondary);
         background-clip: text;
         -webkit-background-clip: text;
         color: transparent;
-        display: none;
+        animation: heart 1000ms;
     }
-
-    &:hover {
-        cursor: pointer;
-
-        .hearttransparent {
-            position: absolute;
-             margin-right: 30px;
-            display: none;
+    @keyframes heart {
+        0%{
+            font-weight: 600;
         }
-
-        .heartcolor {
-            display: block;
+        1%{
+            font-weight: 600;
+            opacity: 0.4;
+            
         }
+        100%{
+            font-weight: 600;
+            opacity: 1;
+            
+        }    
     }
 }

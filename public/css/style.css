@@ -579,6 +579,7 @@ h3 {
   .card_menu_parent .card_menu {
     flex-grow: 1;
     margin: 0px 10px;
+    width: 90%;
   }
 }
 .container {
@@ -661,6 +662,24 @@ footer li a {
   }
   100% {
     transform: scale(0);
+  }
+}
+.loader p {
+  border: 10px solid transparent;
+  border-left: transparent;
+  border-top: 10px solid #FF79DA;
+  color: transparent;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  animation: border 1s linear infinite;
+}
+@keyframes border {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
   }
 }
 
@@ -855,23 +874,39 @@ button:hover {
   overflow: hidden;
   align-self: center;
 }
-.favori .heartcolor {
-  background: linear-gradient(#FF79DA, #9356DC);
+.favori i {
+  font-size: 25px;
+  padding-bottom: 5px;
+  padding-right: 35px;
+}
+.favori .favori i {
+  font-weight: 400;
+  background: linear-gradient(black black);
+  background-clip: border-box;
+  -webkit-background-clip: text;
+  color: transparent;
+  transition: opacity 1000ms;
+}
+.favori i:hover {
+  font-weight: 600;
+  background: linear-gradient(#9356DC, #FF79DA);
   background-clip: text;
   -webkit-background-clip: text;
   color: transparent;
-  display: none;
+  animation: heart 1000ms;
 }
-.favori:hover {
-  cursor: pointer;
-}
-.favori:hover .hearttransparent {
-  position: absolute;
-  margin-right: 30px;
-  display: none;
-}
-.favori:hover .heartcolor {
-  display: block;
+@keyframes heart {
+  0% {
+    font-weight: 600;
+  }
+  1% {
+    font-weight: 600;
+    opacity: 0.4;
+  }
+  100% {
+    font-weight: 600;
+    opacity: 1;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
