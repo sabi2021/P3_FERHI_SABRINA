@@ -471,6 +471,12 @@ h3 {
 .menu .cardElementMenu .card_menu:hover .card_menu__submit {
   margin-right: 0px;
 }
+.menu .cardElementMenu .card_menu:hover .fa-check-circle {
+  transform: translate();
+}
+.menu .cardElementMenu .card_menu:hover .i {
+  transform: rotate(360deg);
+}
 
 @keyframes menuItemAppear {
   0% {
