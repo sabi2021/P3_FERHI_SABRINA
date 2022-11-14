@@ -886,6 +886,7 @@ button:hover {
   font-size: 25px;
   overflow: hidden;
   align-self: center;
+  margin-right: 30px;
 }
 .favori i {
   font-size: 25px;
