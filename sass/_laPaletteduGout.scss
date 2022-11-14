@@ -9,7 +9,7 @@
 .backgroundImage {
     img {
         width: 100%;
-        height: 400px;
+        height: 250px;
         object-fit: cover;
         position: relative;
     }
@@ -17,7 +17,7 @@
 
 .menu {
     position: relative;
-    margin-top: -100px;
+    margin-top: -53 px;
     z-index: auto;
     padding: 18px;
     background-color: darken($color-bg-main, 1);
