@@ -468,13 +468,13 @@ h3 {
 .menu .cardElementMenu .card_menu .card_menu__submit .fa-check-circle {
   color: #fff;
 }
+.menu .cardElementMenu .card_menu i {
+  transition: all 0.5s ease-in-out;
+}
 .menu .cardElementMenu .card_menu:hover .card_menu__submit {
   margin-right: 0px;
 }
-.menu .cardElementMenu .card_menu:hover .fa-check-circle {
-  transform: translate();
-}
-.menu .cardElementMenu .card_menu:hover .i {
+.menu .cardElementMenu .card_menu:hover i {
   transform: rotate(360deg);
 }
 
@@ -650,6 +650,10 @@ footer li a {
   text-decoration: none;
   cursor: pointer;
 }
+footer li .icon {
+  display: inline-block;
+  width: 20px;
+}
 
 .loader {
   display: flex;
@@ -737,7 +741,6 @@ footer li a {
 
 .stepList li {
   display: flex;
-  justify-content: space-between;
   align-items: center;
   font-size: 17px;
   margin-bottom: 25px;
@@ -749,9 +752,11 @@ footer li a {
   padding-bottom: 10px;
   color: #666666;
   margin-left: 5px;
-  width: 90%;
 }
-.stepList li i {
+.stepList li .icon {
+  width: 60px;
+}
+.stepList li .icon i {
   font-size: 19px;
 }
 .stepList li:hover {
@@ -761,7 +766,7 @@ footer li a {
   color: #9356DC;
 }
 
-.stepList li div {
+.stepList li > div:first-child {
   background-color: #9356DC;
   border-radius: 50px;
   width: 15px;
@@ -777,7 +782,6 @@ footer li a {
 .stepList li h2 {
   color: #000;
   font-weight: normal;
-  margin-right: 70px;
 }
 
 .badge {
@@ -811,6 +815,7 @@ button:hover {
 }
 
 .btnCommander {
+  padding: 15px 40px;
   display: block;
   margin: 45px auto;
 }
@@ -896,7 +901,6 @@ button:hover {
   transition: opacity 1000ms;
 }
 .favori i:hover {
-  font-weight: 600;
   background: linear-gradient(#9356DC, #FF79DA);
   background-clip: text;
   -webkit-background-clip: text;

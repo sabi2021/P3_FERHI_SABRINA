@@ -112,19 +112,18 @@
 
                 .fa-check-circle {
                     color: $color-light;
-                 
-            
                 }
+            }
+
+            i {
+                transition: all 0.5s ease-in-out;
             }
 
             &:hover {
                 .card_menu__submit {
                     margin-right: 0px;
                 }
-                .fa-check-circle{
-                    transform: translate();
-                }
-                .i{
+                i {
                     transform: rotate(360deg);
                 }
             }

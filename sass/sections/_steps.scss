@@ -1,13 +1,9 @@
 .stepList {
     margin-top: 20px;
-   
-    
- 
 }
 
 .stepList li {
     display: flex;
-    justify-content: space-between;
     align-items: center;
     font-size: 17px;
     margin-bottom: 25px;
@@ -19,11 +15,15 @@
     padding-bottom: 10px;
     color: $color-text-secondary;
     margin-left: 5px;
-    width: 90%;
     
-    i {
-        font-size: 19px;
+    .icon {
+        width: 60px;
+        
+        i {
+            font-size: 19px;
+        }
     }
+
 
     &:hover {
         background-color: lighten($color-primary, 35);
@@ -34,7 +34,7 @@
     }
 }
 
-.stepList li div {
+.stepList li > div:first-child {
     background-color: $color-primary;
     border-radius: 50px;
     width: 15px;
@@ -50,5 +50,4 @@
 .stepList li h2 {
     color: $color-text;
     font-weight: normal;
-    margin-right: 70px;
 }
