@@ -892,6 +892,7 @@ button:hover {
 }
 .favori i {
   padding-bottom: 5px;
+  margin-right: 20px;
 }
 .favori .favori i {
   font-weight: 400;
