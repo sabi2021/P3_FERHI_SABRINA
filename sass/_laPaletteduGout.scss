@@ -1,7 +1,7 @@
 .leftArrow {
     position: absolute;
     left: 20px;
-    top: 25px;
+    top: 13px;
     font-size: larger;
     cursor: pointer;
 }
@@ -17,7 +17,7 @@
 
 .menu {
     position: relative;
-    margin-top: -53 px;
+    margin-top: -53px;
     z-index: auto;
     padding: 18px;
     background-color: darken($color-bg-main, 1);
@@ -28,10 +28,11 @@
         font-size: 23px;
         overflow: hidden;
         display: flex;
+        justify-content: space-between;
 
         i {
             margin-top: 5px;
-            margin-left: 25px;
+            margin-right: 15px;
         }
     }
 
